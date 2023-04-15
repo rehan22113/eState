@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Gilroy:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+.btn{
+    box-shadow: 2px 2px 2px 1px black;
+    border: 1px solid black;
+}
+.btn2{
+    box-shadow: 4px 6px 2px 1px black;
+    border: 1px solid rgb(222, 222, 222);  
+}
+
+.top-text{
+    font-family: 'Bebas Neue';
+    /* font-size: 85px; */
+
+}
+.top-pic{
+    box-shadow: 7px 9px 1px 1px #FF9AA2;
+    border: 1px solid rgb(222, 222, 222); 
+}
+
+@media (max-width:768px) {
+    .top-text{
+        /* font-size: 65px; */
+    
+    } 
+}
