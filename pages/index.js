@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
+import Script from 'next/script'
+import React,{Fragment} from 'react'
+import { Popover,Transition } from '@headlessui/react'
+
 
 
 const language = [{
   lang:"en",
-  flag:"🇺🇸",
+  flag:"🇬🇧",
   topheading:"Introducing Estate Protocol: We facilitate fractional ownership in prime properties located in economically stable countries, providing people anywhere the benefits of co-ownership and diversifying their investments, all using cryptocurrencies.Estate Protocol's sophisticated real estate tokenization platform bridges access to real world assets into the digital world through blockchain, empowering the global investor."
 },
 {
@@ -25,7 +28,7 @@ const Home = () => {
 
   const HandleLanguage = (e)=>{
       language.map((lang)=>{
-        if(e.target.value == lang.lang ){
+        if(e.flag == lang.flag ){
           // console.log([lang])
           setLang(lang)
         }
@@ -35,7 +38,6 @@ const Home = () => {
    <>
 
    <div className=''>
-  
    <header className="text-gray-600 body-font md:border border-black bg-[#C7CEEA] overflow-hidden ">
   <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center w-[80%] ">
   <div className=' md:border-r border-black md:w-40 p-5'>
@@ -51,20 +53,62 @@ const Home = () => {
     <a className="mr-5 hover:text-gray-900">Contact</a>
     {/* <a className="mr-5 hover:text-gray-900">Fourth Link</a> */}
   </nav>
-  <div className='md:space-x-3 space-x-5'>
+  <div className='flex md:space-x-3 space-x-5'>
 
-  <button className="btn inline-flex items-center bg-[#FF9AA2] border-1 py-2 px-8 focus:outline-none hover:bg-gray-200 text-base text-white mt-4 md:mt-0">Register
+  <button className="btn inline-flex items-center bg-[#FF9AA2] border-1 py-2 px-8 focus:outline-none hover:bg-gray-200 text-base text-white mt-4 md:mt-0">
+  <span className='text-xl'>Register</span>
     
   </button>
-  <div className='btn inline-flex items-center bg-transparent border-1 border-black py-2 px-6 focus:outline-none hover:bg-[#FF9AA2] text-base mt-4 md:mt-0'>
+  <Popover>
+      {({ open,close }) => (
+        /* Use the `open` state to conditionally change the direction of the chevron icon. */
+        <>
+          <Popover.Button className="focus-visible:ring-orange-500">
+          <div className='btn inline-flex items-center bg-transparent border-1 border-black pt-0 pb-2 px-6 focus:outline-none hover:bg-[#FF9AA2] text-base mt-4 md:mt-0'>
+            <span className='text-3xl cursor-pointer'>{lang.flag}</span>
+          </div>
+            {/* <ChevronDownIcon className={open ? 'rotate-180 transform' : ''} /> */}
+          </Popover.Button>
+          <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-1"
+            >
+              <Popover.Panel className="absolute md:left-[87%] left-[70%] z-10 mt-3 w-screen max-w-[8rem] -translate-x-1/2 transform px-2 sm:px-0 lg:max-w-[5rem]">
+                <div className="overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div className="relative flex flex-col bg-white p-1">
+                 
+          
+                    {language.map((item) => (
+                      
+                        
+                        <div key={item.lang} onClick={()=>{HandleLanguage(item);close()}} className="cursor-pointer">
+                       
+                          <p data-headlessui-state="close" className="text-4xl text-center font-medium text-gray-900">
+                            {item?.flag}
+                          </p>
+                       
+                         
+                        </div>
+                      
+                    ))}
+                 
+                    
+                  </div>
+                 
+                </div>
+              </Popover.Panel>
+            </Transition>
+        </>
+      )}
+    </Popover>
 
-  <span className='text-xl'>{lang.flag}</span>
-  <select id='lang' onChange={HandleLanguage} className="border-black focus:outline-none text-base bg-transparent">
-  <option value="en">English</option>
-    <option value="sp">Spainish</option>
-    <option value="tr">Turkey</option>
-  </select>
-  </div>
+    
+    
   </div>
 
   </div>
@@ -253,7 +297,7 @@ const Home = () => {
       </svg>
       <span className="ml-3 text-xl">Tailblocks</span>
     </a> */}
-    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">Copyright©2023.All Right Reserved
+    <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4 ">Copyright©2023.All Right Reserved
       {/* <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a> */}
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
