@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Head>
+      <link rel="icon" type="image/x-icon" href="/logo-estate-1@2x.png"></link>
         <title>eState Protocol</title>
         <meta
           name="viewport"
