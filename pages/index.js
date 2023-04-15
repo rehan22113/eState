@@ -9,16 +9,34 @@ import { Popover,Transition } from '@headlessui/react'
 const language = [{
   lang:"en",
   flag:"🇬🇧",
+  headText:'Save and invest in international Real Estate',
+  headText1:'with crypto',
+  community:'Join the community',
+  what:'what is Estate Protocol?',
+  team:'Team',
+  partner:'Partners',
   topheading:"Introducing Estate Protocol: We facilitate fractional ownership in prime properties located in economically stable countries, providing people anywhere the benefits of co-ownership and diversifying their investments, all using cryptocurrencies.Estate Protocol's sophisticated real estate tokenization platform bridges access to real world assets into the digital world through blockchain, empowering the global investor."
 },
 {
   lang:"sp",
   flag:"🇪🇸",
+  headText:'Ahorre e invierta en Bienes Raíces internacionales',
+  headText1:'con cripto',
+  community:'Unete a la communidad',
+  what:'¿Qué es el Protocolo Patrimonial?',
+  team:'equipo',
+  partner:'Socias',
   topheading:"Presentamos Estate Protocol: Facilitamos la propiedad fraccionada en propiedades de primer nivel ubicadas en países económicamente estables, brindando a personas de cualquier lugar los beneficios de la copropiedad y la diversificación de sus inversiones, todo utilizando criptomonedas.La sofisticada plataforma de tokenización de bienes raíces de Estate Protocol establece un puente de acceso a activos del mundo real en el mundo digital a través de la cadena de bloques, empoderando al inversor global."
 },
 {
   lang:"tr",
   flag:"🇹🇷",
+  headText:'Tasarruf edin ve uluslararası Gayrimenkule yatırım yapın',
+  headText1:'kripto ile',
+  community:'Topluluğa katıl',
+  what:'Emlak Protokolü nedir?',
+  team:'Takım',
+  partner:'Ortaklar',
   topheading:"Estate Protocol'ü tanıtıyoruz: Ekonomik olarak istikrarlı ülkelerde bulunan birinci sınıf mülklerde kesirli mülkiyeti kolaylaştırırız, böylece dünyanın her yerindeki insanlara ortak mülkiyetin faydalarını ve yatırımlarını çeşitlendirmeyi sunarız, tüm bunlar kripto paralar kullanarak gerçekleştirilir.Estate Protocol'ün sofistike gayrimenkul tokenleştirme platformu, dünya çapındaki yatırımcıları güçlendiren blockchain üzerinden gerçek dünya varlıklarına dijital dünyada erişimi sağlar."
 }]
 
@@ -125,14 +143,14 @@ const Home = () => {
    </div> */}
   <div className="container mx-auto flex px-5 md:flex-row flex-col items-center  md:w-[80%] w-[90%]">
     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:py-0 py-10  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font lg:text-8xl md:text-6xl text-5xl mb-4 font-medium text-gray-900 top-text ">Save and invest in international Real Estate 
-        <span className=" text-white " ><br className='md:hidden '/> with crypto </span>
+      <h1 className="title-font lg:text-8xl md:text-6xl text-5xl mb-4 font-medium text-gray-900 top-text ">{lang.headText} 
+        <span className=" text-white " ><br className='md:hidden '/>{lang.headText1}</span>
       </h1>
      
       <div className="flex justify-center py-10">
-      <button className="btn2 inline-flex items-center bg-[#000000] border-1 py-2 px-8 focus:outline-none hover:bg-gray-200 text-base text-white mt-4 md:mt-0">Whitepaper
+      <a href="https://app.gitbook.com/o/hFf5SvGe5EOcWOpe6ap9/s/zYvQhVSCe9ZELNRL3Cu/" target='_blank' className="btn2 inline-flex items-center bg-[#000000] border-1 py-2 px-8 focus:outline-none hover:bg-gray-200 text-base text-white mt-4 md:mt-0">Whitepaper
     
-    </button>
+    </a>
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 py-10">
@@ -146,7 +164,7 @@ const Home = () => {
     <img src='/lightning-1.svg' className='w-20'/>
    </div>
     <div className="flex flex-col text-center w-full mb-12">
-      <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Join the community</h1>
+      <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">{lang.community}</h1>
     </div>
     <div className="flex justify-center md:space-x-28 space-x-5 ">
         <img src="/vector.svg" alt="" srcset="" />
@@ -159,7 +177,7 @@ const Home = () => {
   <div className="container px-5 py-2 mx-auto md:w-[70%] w-[90%]">
     <div className="flex flex-col text-center w-full mb-10">
      
-      <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">What is Estate Protocol?</h1>
+      <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">{lang.what}</h1>
       <p className="lg:w-2/3 mx-auto leading-8 text-lg">{lang.topheading}</p>
     </div>
     {/* <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
@@ -172,7 +190,7 @@ const Home = () => {
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto w-[80%]">
     <div className="flex flex-col text-center w-full mb-2">
-      <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">TEAM</h1>
+      <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">{lang.team}</h1>
     </div>  
     <div className="flex flex-wrap -m-4">
       <div className="p-4 lg:w-1/4 md:w-1/2">
@@ -199,7 +217,7 @@ const Home = () => {
         <div className="h-full flex flex-col items-center text-center">
           <img alt="team" className="flex-shrink-0 w-full h-64 object-center mb-4" src="/rectangle-9@2x.png" />
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-gray-900">Tadej Francelj</h2>
+            <h2 className="title-font font-medium text-lg text-gray-900">Ryan smith</h2>
             <h3 className="text-gray-500 mb-3">LEGAL</h3>
             {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
             <span className="inline-flex">     
@@ -261,7 +279,7 @@ const Home = () => {
 <section className='flex'>
     <div className='bg-[#FFDAC1] md:w-[75%] w-[90%] md:h-56 mx-auto btn md:py-10 py-4'>
     <div className="flex flex-col text-center w-full mb-2">
-      <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">PARTNERS</h1>
+      <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">{lang.partner}</h1>
     </div> 
     <div className='flex justify-center lg:space-x-10 space-x-2'>
     <img alt="team" className="lg:w-60 md:w-32 w-24 object-center mb-4" src="/rectangle-30@2x.png" />
