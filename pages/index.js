@@ -75,11 +75,11 @@ const Home = () => {
     {/* <a className="mr-5 hover:text-gray-900">Fourth Link</a> */}
   </nav>
   <div className='flex md:space-x-3 space-x-5'>
-
+  <a href='https://verify-with.blockpass.org/?clientId=estate_protocol_1_fd4bb&serviceName=Estate%20Protocol&env=prod'>
   <button className="btn inline-flex items-center bg-[#FF9AA2] border-1 py-2 px-8 focus:outline-none hover:bg-gray-200 text-base text-white mt-4 md:mt-0">
   <span className='text-xl'>{lang.register}</span>
-    
   </button>
+    </a>
   <Popover>
       {({ open,close }) => (
         /* Use the `open` state to conditionally change the direction of the chevron icon. */
@@ -209,7 +209,7 @@ const Home = () => {
     <div className="flex flex-wrap -m-4">
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-60 h-60 object-center mb-4" src="/2.jpg" />
+          <img alt="team" className="flex-shrink-0 w-56 h-60 object-center mb-4" src="/2.jpg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Parv Prabhakar</h2>
             <h3 className="text-gray-500 mb-3">CEO</h3>
@@ -232,7 +232,7 @@ const Home = () => {
           <img alt="team" className="flex-shrink-0 w-60 h-60 object-center mb-4" src="/1.jpeg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Ryan smith</h2>
-            <h3 className="text-gray-500 mb-3">LEGAL</h3>
+            <h3 className="text-gray-500 mb-3">Head of Real Estate</h3>
             {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
             <span className="inline-flex">     
               {/* <a className="ml-2 text-gray-500">           
@@ -271,8 +271,8 @@ const Home = () => {
         <div className="h-full flex flex-col items-center text-center">
           <img alt="team" className="flex-shrink-0 w-60 h-60 object-center mb-4" src="/rectangle-29@2x.png" />
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-gray-900">VJ</h2>
-            <h3 className="text-gray-500 mb-3">HEAD OF COMUNITY</h3>
+            <h2 className="title-font font-medium text-lg text-gray-900">VJ's</h2>
+            <h3 className="text-gray-500 mb-3 capitalize">Head of Community</h3>
             {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
             <span className="inline-flex">     
               {/* <a className="ml-2 text-gray-500">           
