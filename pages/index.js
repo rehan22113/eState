@@ -16,7 +16,7 @@ const language = [{
   what:'What is Estate Protocol?',
   team:'Team',
   partner:'Partners',
-  topheading:"Introducing Estate Protocol: We facilitate fractional ownership in prime properties located in economically stable countries, providing people anywhere the benefits of co-ownership and diversifying their investments, all using cryptocurrencies.Estate Protocol's sophisticated real estate tokenization platform bridges access to real world assets into the digital world through blockchain, empowering the global investor."
+  topheading:"Introducing Estate Protocol: We facilitate fractional ownership in prime properties located in economically stable countries, providing people anywhere the benefits of co-ownership and diversifying their investments, all using cryptocurrencies. Estate Protocol's sophisticated real estate tokenization platform bridges access to real world assets into the digital world through blockchain, empowering the global investor."
 },
 {
   lang:"sp",
