@@ -28,7 +28,7 @@ const language = [{
   what:'¿Qué es el Protocolo Patrimonial?',
   team:'equipo',
   partner:'Socias',
-  topheading:"Presentamos Estate Protocol: Facilitamos la propiedad fraccionada en propiedades de primer nivel ubicadas en países económicamente estables, brindando a personas de cualquier lugar los beneficios de la copropiedad y la diversificación de sus inversiones, todo utilizando criptomonedas.La sofisticada plataforma de tokenización de bienes raíces de Estate Protocol establece un puente de acceso a activos del mundo real en el mundo digital a través de la cadena de bloques, empoderando al inversor global."
+  topheading:"Presentamos Estate Protocol: Facilitamos la propiedad fraccionada en propiedades de primer nivel ubicadas en países económicamente estables, brindando a personas de cualquier lugar los beneficios de la copropiedad y la diversificación de sus inversiones, todo utilizando criptomonedas. La sofisticada plataforma de tokenización de bienes raíces de Estate Protocol establece un puente de acceso a activos del mundo real en el mundo digital a través de la cadena de bloques, empoderando al inversor global."
 },
 {
   lang:"tr",
@@ -40,7 +40,7 @@ const language = [{
   what:'Emlak Protokolü nedir?',
   team:'Takım',
   partner:'Ortaklar',
-  topheading:"Estate Protocol'ü tanıtıyoruz: Ekonomik olarak istikrarlı ülkelerde bulunan birinci sınıf mülklerde kesirli mülkiyeti kolaylaştırırız, böylece dünyanın her yerindeki insanlara ortak mülkiyetin faydalarını ve yatırımlarını çeşitlendirmeyi sunarız, tüm bunlar kripto paralar kullanarak gerçekleştirilir.Estate Protocol'ün sofistike gayrimenkul tokenleştirme platformu, dünya çapındaki yatırımcıları güçlendiren blockchain üzerinden gerçek dünya varlıklarına dijital dünyada erişimi sağlar."
+  topheading:"Estate Protocol'ü tanıtıyoruz: Ekonomik olarak istikrarlı ülkelerde bulunan birinci sınıf mülklerde kesirli mülkiyeti kolaylaştırırız, böylece dünyanın her yerindeki insanlara ortak mülkiyetin faydalarını ve yatırımlarını çeşitlendirmeyi sunarız, tüm bunlar kripto paralar kullanarak gerçekleştirilir. Estate Protocol'ün sofistike gayrimenkul tokenleştirme platformu, dünya çapındaki yatırımcıları güçlendiren blockchain üzerinden gerçek dünya varlıklarına dijital dünyada erişimi sağlar."
 }]
 
 const Home = () => {
@@ -185,7 +185,7 @@ const Home = () => {
   </div>
 </section>
 <section className="text-gray-600 body-font">
-  <div className="container px-5 py-20 mx-auto md:w-[70%] w-[90%]">
+  <div className="container px-5 py-10 mx-auto md:w-[70%] w-[90%]">
     <div id='about' className="flex flex-col text-center w-full mb-10">
      
       <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">{lang.what}</h1>
