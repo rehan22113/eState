@@ -261,7 +261,7 @@ const Home = () => {
         <div className="h-full flex flex-col items-center text-center">
           <img alt="team" className="flex-shrink-0 w-64 h-60 object-contain mb-4" src="/rectangle-29@2x.png" />
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-gray-900">VJ's</h2>
+            <h2 className="title-font font-medium text-lg text-gray-900">Vijeet Malik</h2>
             <h3 className="text-gray-500 mb-3 capitalize">Head of Community</h3>
             {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
             <span className="inline-flex">     
