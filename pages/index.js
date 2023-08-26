@@ -99,23 +99,18 @@ const Home = () => {
               <Popover.Panel className="absolute md:left-[87%] left-[70%] z-10 mt-3 w-screen max-w-[8rem] -translate-x-1/2 transform px-2 sm:px-0 lg:max-w-[5rem]">
                 <div className="overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="relative flex flex-col bg-white p-1">
-                 
-          
+
                     {language.map((item) => (
-                      
-                        
+
                         <div key={item.lang} onClick={()=>{HandleLanguage(item);close()}} className="cursor-pointer">
-                       
+
                           <p data-headlessui-state="close" className="text-4xl text-center font-medium text-gray-900">
                             {item?.flag}
                           </p>
-                       
-                         
+
                         </div>
-                      
+
                     ))}
-                 
-                    
                   </div>
                  
                 </div>
@@ -206,7 +201,7 @@ const Home = () => {
     <div className="flex flex-wrap -m-4">
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-52 h-52 mb-4" src="/2.jpg" />
+          <img alt="team" className="flex-shrink-0 w-52 h-52 object-cover mb-4" src="/2.jpg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Parv Prabhakar</h2>
             <h3 className="text-gray-500 mb-3">CEO</h3>
@@ -225,7 +220,7 @@ const Home = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-52 h-52 mb-4" src="/1.jpeg" />
+          <img alt="team" className="flex-shrink-0 w-52 h-52 object-cover mb-4" src="/1.jpeg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Ryan smith</h2>
             <h3 className="text-gray-500 mb-3">Head of Real Estate</h3>
@@ -241,7 +236,7 @@ const Home = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-52 h-52 mb-4" src="/rectangle-11@2x.png" />
+          <img alt="team" className="flex-shrink-0 w-52 h-52 object-cover mb-4" src="/rectangle-11@2x.png" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Cvic Innocent</h2>
             <h3 className="text-gray-500 mb-3">CTO</h3>
@@ -256,7 +251,7 @@ const Home = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-52 h-52 mb-4" src="/rec12.jpeg" />
+          <img alt="team" className="flex-shrink-0 w-52 h-52 object-cover mb-4" src="/rec12.jpeg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Abhinav Kumar</h2>
             <h3 className="text-gray-500 mb-3 capitalize">Head of Marketing</h3>
