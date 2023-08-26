@@ -1,16 +1,13 @@
-import Head from 'next/head'
 import Link from 'next/link'
-import Script from 'next/script'
 import React,{Fragment} from 'react'
 import { Popover,Transition } from '@headlessui/react'
-
 
 
 const language = [{
   lang:"en",
   flag:"🇬🇧",
   headText:'Save and invest in international Real Estate',
-  headText1:' with crypto',
+  headText1:'with crypto',
   register:"Register",
   community:'Join the community',
   what:'What is Estate Protocol?',
