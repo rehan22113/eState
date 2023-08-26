@@ -136,7 +136,7 @@ const Home = () => {
 </header>
 <section className="text-gray-600 body-font bg-[#C7CEEA] overflow-hidden">
   <div className=' relative z-10 top-72'>
-    <img src='/zig-zag.svg' className='w-32'/>
+    <img src='/zig-zag.svg' className='w-28'/>
    </div>
    <div className=' relative z-0 top-[34rem] left-[50%] overflow-hidden'>
     <img src='/zig-zag.svg' className='w-32'/>
@@ -144,10 +144,10 @@ const Home = () => {
    {/* <div className=' relative z-10 top-[10rem] right-0'>
     <img src='/zig-zag.svg' className='w-32'/>
    </div> */}
-  <div className="container mx-auto flex px-5 md:flex-row flex-col items-center  md:w-[80%] w-[90%]">
-    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:py-0 py-10  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font lg:text-8xl md:text-6xl text-5xl mb-4 font-medium text-gray-900 top-text ">{lang.headText} 
-        <span className=" text-white " ><br className='md:hidden '/>{lang.headText1}</span>
+  <div className="container mx-auto flex px-5 md:flex-row flex-col items-center md:w-[80%] w-[90%]">
+    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:py-0 py-1 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 className="title-font lg:text-6xl md:text-6xl text-5xl mb-4 font-medium text-gray-900 top-text">{lang.headText} 
+        <span className=" text-white" ><br className='md:hidden '/>{lang.headText1}</span>
       </h1>
      
       <div className="flex justify-center py-10">
@@ -156,7 +156,7 @@ const Home = () => {
     </a>
       </div>
     </div>
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 py-10">
+    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 pb-5">
       <img className="top-pic object-cover object-center rounded" alt="hero" src="/rectangle-23@2x.png" />
     </div>
   </div>
@@ -209,7 +209,7 @@ const Home = () => {
     <div className="flex flex-wrap -m-4">
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-64 h-60 object-contain mb-4" src="/2.jpg" />
+          <img alt="team" className="flex-shrink-0 w-64 h-60 mb-4" src="/2.jpg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Parv Prabhakar</h2>
             <h3 className="text-gray-500 mb-3">CEO</h3>
@@ -228,7 +228,7 @@ const Home = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-64 h-60 object-contain mb-4" src="/1.jpeg" />
+          <img alt="team" className="flex-shrink-0 w-64 h-60 mb-4" src="/1.jpeg" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Ryan smith</h2>
             <h3 className="text-gray-500 mb-3">Head of Real Estate</h3>
@@ -244,7 +244,7 @@ const Home = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-64 h-60 object-contain mb-4" src="/rectangle-11@2x.png" />
+          <img alt="team" className="flex-shrink-0 w-64 h-60 mb-4" src="/rectangle-11@2x.png" />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Cvic Innocent</h2>
             <h3 className="text-gray-500 mb-3">CTO</h3>
@@ -259,13 +259,17 @@ const Home = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 w-64 h-60 object-contain mb-4" src="/rectangle-29@2x.png" />
+          <img alt="team" className="flex-shrink-0 w-64 h-60 mb-4" src="/rec12.jpeg" />
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-gray-900">Vijeet Malik</h2>
-            <h3 className="text-gray-500 mb-3 capitalize">Head of Community</h3>
+            <h2 className="title-font font-medium text-lg text-gray-900">Abhinav Kumar</h2>
+            <h3 className="text-gray-500 mb-3 capitalize">Head of Marketing</h3>
             {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
-            <span className="inline-flex">     
-              <a href='https://www.linkedin.com/in/vijeet-malik66626/' className="ml-2 text-gray-500">
+            <span className="inline-flex"> 
+            <a href=' https://twitter.com/singhabhinav' className="ml-2 text-gray-500">           
+                  <svg xmlns="http://www.w3.org/2000/svg" className='w-5' fill="#1DA1F2" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" /></svg>
+
+              </a>    
+              <a href='https://www.linkedin.com/in/abhinav-kumar-eth/' className="ml-2 text-gray-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill='#0072b1' className='w-5' viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" /></svg>
 
               </a>
@@ -293,7 +297,7 @@ const Home = () => {
 
 </section>
 
-<footer id='contact' className="text-gray-600 body-font bg-[#FFB7B2] mt-10">
+<footer id='contact' className="text-white body-font bg-[#FFB7B2] mt-10">
 <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
 
     <div className='flex items-center w-full flex-col justify-center'>
