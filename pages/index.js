@@ -6,8 +6,8 @@ import { Popover,Transition } from '@headlessui/react'
 const language = [{
   lang:"en",
   flag:"🇬🇧",
-  headText:'Save and invest in international Real Estate',
-  headText1:'with crypto',
+  headText:'Save and invest in international Real Estate ',
+  headText1:' with crypto',
   register:"Register",
   community:'Join the community',
   what:'What is Estate Protocol?',
@@ -139,7 +139,7 @@ const Home = () => {
   <div className="container mx-auto flex px-5 md:flex-row flex-col items-center md:w-[80%] w-[90%]">
     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:py-0 py-1 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 className="title-font lg:text-6xl md:text-6xl text-5xl mb-4 font-medium text-gray-900 top-text">{lang.headText} 
-        <span className=" text-white" ><br className='md:hidden '/>{lang.headText1}</span>
+        <span className=" text-white mr-2" ><br className='md:hidden '/>{lang.headText1}</span>
       </h1>
      
       <div className="flex justify-center py-10">
